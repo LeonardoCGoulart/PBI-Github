@@ -1,0 +1,908 @@
+cultureInfo pt-BR
+
+	linguisticMetadata =
+			{
+			  "Version": "4.1.0",
+			  "Language": "en-US",
+			  "Entities": {
+			    "entity__medida": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_medidas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "_medida": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.ultima_att": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_medidas",
+			          "ConceptualProperty": "Ultima_Att"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ultima att": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Ultima_Att": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "att": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.positivo": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_medidas",
+			          "ConceptualProperty": "Positivo"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "positivo": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.neutro": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_medidas",
+			          "ConceptualProperty": "Neutro"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "neutro": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "indicadore": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Indicadores"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "indicadore": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "indicadore.entity__medida": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Indicadores",
+			          "ConceptualProperty": "_medidas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "_medida": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "indicadore.entity__medidas_campos": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Indicadores",
+			          "ConceptualProperty": "_medidas Campos"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "_medidas campos": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "_medida campos": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        }
+			      ]
+			    },
+			    "indicadore.entity__medidas_pedido": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Indicadores",
+			          "ConceptualProperty": "_medidas Pedido"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "_medidas pedido": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "_medida pedido": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        }
+			      ]
+			    },
+			    "dimensõe": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Dimensões"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dimensõe": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "dimensõe.dimensõe": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Dimensões",
+			          "ConceptualProperty": "Dimensões"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dimensõe": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "dimensõe name": {
+			            "State": "Generated"
+			          }
+			        }
+			      ],
+			      "NameType": "Name"
+			    },
+			    "dimensõe.dimensões_campos": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Dimensões",
+			          "ConceptualProperty": "Dimensões Campos"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "dimensões campos": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "dimensõe campos": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        }
+			      ]
+			    },
+			    "dimensõe.dimensões_pedido": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Dimensões",
+			          "ConceptualProperty": "Dimensões Pedido"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "dimensões pedido": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "dimensõe pedido": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        }
+			      ]
+			    },
+			    "catálogo_de_dado": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Catálogo de Dados"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "catálogo de dado": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "catálogo_de_dado.categoria": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Catálogo de Dados",
+			          "ConceptualProperty": "Categoria"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "categoria": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "catálogo_de_dado.nome": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Catálogo de Dados",
+			          "ConceptualProperty": "Nome"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "nome": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "catálogo_de_dado.descricao": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Catálogo de Dados",
+			          "ConceptualProperty": "Descricao"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "descricao": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "catálogo_de_dado.tipo": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Catálogo de Dados",
+			          "ConceptualProperty": "Tipo"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "tipo": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "catálogo_de_dado.origem": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Catálogo de Dados",
+			          "ConceptualProperty": "Origem"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "origem": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "catálogo_de_dado.expressao": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Catálogo de Dados",
+			          "ConceptualProperty": "Expressao"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "expressao": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "catálogo_de_dado.lineage_tag": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Catálogo de Dados",
+			          "ConceptualProperty": "Lineage Tag"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "lineage tag": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "tag": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "lineage identifier": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "lineage device": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "device": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "lineage label": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "lineage ticket": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "lineage tab": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "lineage docket": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "lineage code": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "lineage chip": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "lineage mark": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        }
+			      ]
+			    }
+			  },
+			  "Relationships": {
+			    "catálogo_de_dado_has_expressao": {
+			      "Binding": {
+			        "ConceptualEntity": "Catálogo de Dados"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "catálogo_de_dado": {
+			          "Target": {
+			            "Entity": "catálogo_de_dado"
+			          }
+			        },
+			        "catálogo_de_dado.expressao": {
+			          "Target": {
+			            "Entity": "catálogo_de_dado.expressao"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "catálogo_de_dado"
+			            },
+			            "Object": {
+			              "Role": "catálogo_de_dado.expressao"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "catálogo_de_dadoes_have_expressaos"
+			        }
+			      ]
+			    },
+			    "catálogo_de_dado_has_origem": {
+			      "Binding": {
+			        "ConceptualEntity": "Catálogo de Dados"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "catálogo_de_dado": {
+			          "Target": {
+			            "Entity": "catálogo_de_dado"
+			          }
+			        },
+			        "catálogo_de_dado.origem": {
+			          "Target": {
+			            "Entity": "catálogo_de_dado.origem"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "catálogo_de_dado"
+			            },
+			            "Object": {
+			              "Role": "catálogo_de_dado.origem"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "catálogo_de_dadoes_have_origems"
+			        }
+			      ]
+			    },
+			    "catálogo_de_dado_has_tipo": {
+			      "Binding": {
+			        "ConceptualEntity": "Catálogo de Dados"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "catálogo_de_dado": {
+			          "Target": {
+			            "Entity": "catálogo_de_dado"
+			          }
+			        },
+			        "catálogo_de_dado.tipo": {
+			          "Target": {
+			            "Entity": "catálogo_de_dado.tipo"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "catálogo_de_dado"
+			            },
+			            "Object": {
+			              "Role": "catálogo_de_dado.tipo"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "catálogo_de_dadoes_have_tipos"
+			        }
+			      ]
+			    },
+			    "catálogo_de_dado_has_descricao": {
+			      "Binding": {
+			        "ConceptualEntity": "Catálogo de Dados"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "catálogo_de_dado": {
+			          "Target": {
+			            "Entity": "catálogo_de_dado"
+			          }
+			        },
+			        "catálogo_de_dado.descricao": {
+			          "Target": {
+			            "Entity": "catálogo_de_dado.descricao"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "catálogo_de_dado"
+			            },
+			            "Object": {
+			              "Role": "catálogo_de_dado.descricao"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "catálogo_de_dadoes_have_descricaos"
+			        }
+			      ]
+			    },
+			    "catálogo_de_dado_has_nome": {
+			      "Binding": {
+			        "ConceptualEntity": "Catálogo de Dados"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "catálogo_de_dado": {
+			          "Target": {
+			            "Entity": "catálogo_de_dado"
+			          }
+			        },
+			        "catálogo_de_dado.nome": {
+			          "Target": {
+			            "Entity": "catálogo_de_dado.nome"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "catálogo_de_dado"
+			            },
+			            "Object": {
+			              "Role": "catálogo_de_dado.nome"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "catálogo_de_dadoes_have_nome"
+			        }
+			      ]
+			    },
+			    "catálogo_de_dado_has_categoria": {
+			      "Binding": {
+			        "ConceptualEntity": "Catálogo de Dados"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "catálogo_de_dado": {
+			          "Target": {
+			            "Entity": "catálogo_de_dado"
+			          }
+			        },
+			        "catálogo_de_dado.categoria": {
+			          "Target": {
+			            "Entity": "catálogo_de_dado.categoria"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "catálogo_de_dado"
+			            },
+			            "Object": {
+			              "Role": "catálogo_de_dado.categoria"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "catálogo_de_dadoes_have_categorias"
+			        }
+			      ]
+			    },
+			    "dimensõe_has_dimensõe": {
+			      "Binding": {
+			        "ConceptualEntity": "Dimensões"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dimensõe": {
+			          "Target": {
+			            "Entity": "dimensõe"
+			          }
+			        },
+			        "dimensõe.dimensõe": {
+			          "Target": {
+			            "Entity": "dimensõe.dimensõe"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dimensõe"
+			            },
+			            "Object": {
+			              "Role": "dimensõe.dimensõe"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dimensões_have_dimensões"
+			        },
+			        {
+			          "Name": {
+			            "Subject": {
+			              "Role": "dimensõe"
+			            },
+			            "Name": {
+			              "Role": "dimensõe.dimensõe"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dimensões_are_names_IDs_of_dimensões"
+			        }
+			      ]
+			    },
+			    "indicadore_has_entity__medida": {
+			      "Binding": {
+			        "ConceptualEntity": "Indicadores"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "indicadore": {
+			          "Target": {
+			            "Entity": "indicadore"
+			          }
+			        },
+			        "indicadore.entity__medida": {
+			          "Target": {
+			            "Entity": "indicadore.entity__medida"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "indicadore"
+			            },
+			            "Object": {
+			              "Role": "indicadore.entity__medida"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "indicadores_have__medidas"
+			        }
+			      ]
+			    },
+			    "entity__medida_has_neutro": {
+			      "Binding": {
+			        "ConceptualEntity": "_medidas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity__medida": {
+			          "Target": {
+			            "Entity": "entity__medida"
+			          }
+			        },
+			        "entity__medida.neutro": {
+			          "Target": {
+			            "Entity": "entity__medida.neutro"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity__medida"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.neutro"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "Phrasing_medidas_have_neutro"
+			        }
+			      ]
+			    },
+			    "entity__medida_has_positivo": {
+			      "Binding": {
+			        "ConceptualEntity": "_medidas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity__medida": {
+			          "Target": {
+			            "Entity": "entity__medida"
+			          }
+			        },
+			        "entity__medida.positivo": {
+			          "Target": {
+			            "Entity": "entity__medida.positivo"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity__medida"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.positivo"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "Phrasing_medidas_have_positivo"
+			        }
+			      ]
+			    },
+			    "entity__medida_has_ultima_att": {
+			      "Binding": {
+			        "ConceptualEntity": "_medidas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity__medida": {
+			          "Target": {
+			            "Entity": "entity__medida"
+			          }
+			        },
+			        "entity__medida.ultima_att": {
+			          "Target": {
+			            "Entity": "entity__medida.ultima_att"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity__medida"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.ultima_att"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "Phrasing_medidas_have_ultima_att"
+			        }
+			      ]
+			    },
+			    "catálogo_de_dado_has_lineage_tag": {
+			      "Binding": {
+			        "ConceptualEntity": "Catálogo de Dados"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "catálogo_de_dado": {
+			          "Target": {
+			            "Entity": "catálogo_de_dado"
+			          }
+			        },
+			        "catálogo_de_dado.lineage_tag": {
+			          "Target": {
+			            "Entity": "catálogo_de_dado.lineage_tag"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "catálogo_de_dado"
+			            },
+			            "Object": {
+			              "Role": "catálogo_de_dado.lineage_tag"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "catálogo_de_dadoes_have_lineage_tags"
+			        }
+			      ]
+			    }
+			  },
+			  "Agents": {
+			    "Internal": {
+			      "Version": "1.1.0"
+			    }
+			  }
+			}
+		contentType: json
+

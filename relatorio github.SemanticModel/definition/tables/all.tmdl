@@ -1,0 +1,45 @@
+table all
+	lineageTag: d7fa757c-466b-4deb-b831-3f974c89ffe8
+
+	column capital
+		dataType: string
+		lineageTag: 9f1a1d4e-182d-4557-80d7-1ed688154162
+		summarizeBy: none
+		sourceColumn: capital
+
+		annotation SummarizationSetBy = Automatic
+
+	column region
+		dataType: string
+		lineageTag: c41d05c8-b6ad-4cb3-96d8-8a4f6a953e00
+		summarizeBy: none
+		sourceColumn: region
+
+		annotation SummarizationSetBy = Automatic
+
+	column population
+		dataType: int64
+		formatString: 0
+		lineageTag: eb636d31-3fe9-453d-94fd-4a643cb743c6
+		summarizeBy: sum
+		sourceColumn: population
+
+		annotation SummarizationSetBy = Automatic
+
+	partition all = m
+		mode: import
+		source =
+				let
+				    Fonte = Json.Document(Web.Contents("https://restcountries.com/v3.1/all?fields=name,capital,region,population")),
+				    #"Convertido para Tabela" = Table.FromList(Fonte, Splitter.SplitByNothing(), null, null, ExtraValues.Error),
+				    #"Column1 Expandido" = Table.ExpandRecordColumn(#"Convertido para Tabela", "Column1", {"name", "capital", "region", "population"}, {"name", "capital", "region", "population"}),
+				    #"capital Expandido" = Table.ExpandListColumn(#"Column1 Expandido", "capital"),
+				    #"Colunas Removidas" = Table.RemoveColumns(#"capital Expandido",{"name"}),
+				    #"Tipo Alterado" = Table.TransformColumnTypes(#"Colunas Removidas",{{"population", Int64.Type}, {"region", type text}, {"capital", type text}})
+				in
+				    #"Tipo Alterado"
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+

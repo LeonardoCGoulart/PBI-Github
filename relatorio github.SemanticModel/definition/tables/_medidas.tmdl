@@ -1,0 +1,42 @@
+table _medidas
+	lineageTag: 73624526-880f-4af1-8918-7c61bac0c75e
+
+	measure Ultima_Att = FORMAT(NOW(), "DD/MM/YY HH:MM")
+		lineageTag: cbf78cd2-8dce-4fec-b8f3-74a83c8534be
+
+	measure Positivo = 0.23456
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: 01290208-1507-45e4-af91-f6135875a404
+
+	measure Neutro = 0.0564
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: 4ab925c9-034d-469e-8bf3-3bd8621a6fe2
+
+	measure Population = SUM('all'[population])
+		formatString: #,0
+		lineageTag: 150a87b1-45ea-4ba1-8e15-6c5a725e430f
+
+	measure 'Population LY' = [Population] / 1.42
+		formatString: #,0
+		lineageTag: 095b1e75-cc52-462d-84d3-7d34d89c25a4
+
+		annotation PBI_FormatHint = {"isDecimal":true}
+
+	measure 'Population YoY' = ([Population] / [Population LY]) - 1
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: cfd913ff-7154-45b5-8131-15140cf5c465
+
+	partition _medidas = m
+		mode: import
+		source =
+				let
+				    Fonte = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("i44FAA==", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [#"Coluna 1" = _t]),
+				    #"Tipo Alterado" = Table.TransformColumnTypes(Fonte,{{"Coluna 1", type text}}),
+				    #"Colunas Removidas" = Table.RemoveColumns(#"Tipo Alterado",{"Coluna 1"})
+				in
+				    #"Colunas Removidas"
+
+	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navegação
+

@@ -1,0 +1,48 @@
+table Indicadores
+	lineageTag: 15ebb6f7-b98a-4aac-99d2-03e1ee6aca93
+
+	column _medidas
+		lineageTag: 83b35317-49f6-47ef-acb9-dbc693e4b160
+		summarizeBy: none
+		sourceColumn: [Value1]
+		sortByColumn: '_medidas Pedido'
+
+		relatedColumnDetails
+			groupByColumn: '_medidas Campos'
+
+		annotation SummarizationSetBy = Automatic
+
+	column '_medidas Campos'
+		isHidden
+		lineageTag: 24e6525b-fdf6-4dd5-b9fb-db28308a0033
+		summarizeBy: none
+		sourceColumn: [Value2]
+		sortByColumn: '_medidas Pedido'
+
+		extendedProperty ParameterMetadata =
+				{
+				  "version": 3,
+				  "kind": 2
+				}
+
+		annotation SummarizationSetBy = Automatic
+
+	column '_medidas Pedido'
+		isHidden
+		formatString: 0
+		lineageTag: e54aab48-bb58-4eee-8a93-147b3002156a
+		summarizeBy: sum
+		sourceColumn: [Value3]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Indicadores = calculated
+		mode: import
+		source =
+				{
+				    ("População", NAMEOF('_medidas'[Population]), 0),
+				    ("População LY", NAMEOF('_medidas'[Population LY]), 1)
+				}
+
+	annotation PBI_Id = f4580203d1574bd48a4f137228c40393
+
